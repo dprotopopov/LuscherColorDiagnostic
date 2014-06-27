@@ -1,0 +1,8 @@
+<div data-options="dxView : { name: 'ReadyView', title: 'ReadyView' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div id="actionSheetContainer" data-bind="dxActionSheet: {  dataSource: actionSheetData, visible: actionSheetVisible , showCancelButton: false, title: title, usePopover: true }"></div>
+        <div id="toastContainer1" data-bind="dxToast:{message: message1, type:'success', displayTime: 3000 }"></div>
+        <div id="toastContainer2" data-bind="dxToast:{message: message2, type:'error', displayTime: 3000 }"></div>
+        <div id="toastContainer3" data-bind="dxToast: { position: { my: 'top center', at: 'top center', of: window, offset: '0 20' }, displayTime: 3000, message: message3 }"></div>
+    </div>
+</div>

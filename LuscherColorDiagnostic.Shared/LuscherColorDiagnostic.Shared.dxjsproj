@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5b0db5c1-fa8e-49f4-b625-67b5eb9680c2</ProjectGuid>
+    <AutoAssignPort>True</AutoAssignPort>
+    <RunInSimulator>True</RunInSimulator>
+    <ApplicationPage>app.html</ApplicationPage>
+    <Name>Shared</Name>
+    <RootNamespace>LuscherColorDiagnostic</RootNamespace>
+    <Links>
+      <LinkDescription>
+        <Project>14fde73f-bc32-409a-aef9-f2049bea05ce</Project>
+        <Path />
+      </LinkDescription>
+      <LinkDescription>
+        <Project>63d3cdf4-09ac-4c09-8378-95b89fefa41e</Project>
+        <Path>www</Path>
+      </LinkDescription>
+    </Links>
+    <DebugSitePortNumber>50000</DebugSitePortNumber>
+    <UseWebDev>False</UseWebDev>
+    <DefaultDevice>iPad</DefaultDevice>
+    <DeviceOrientation>Portrait</DeviceOrientation>
+    <XapPackagePublisherID>{55052b73-842f-46da-9a0f-7274d9b93fcb}</XapPackagePublisherID>
+    <XapPackageProductID>{b0c9a061-39ea-4314-ab1d-76ed008f68c3}</XapPackageProductID>
+    <KeyApkPath />
+    <KeyApkAlias />
+    <VersionCode>1</VersionCode>
+    <TemplateFileApk />
+    <UseCustomTemplateNameApk>False</UseCustomTemplateNameApk>
+    <TemplateFileXap />
+    <UseCustomTemplateNameXap>False</UseCustomTemplateNameXap>
+    <XapSupportedLanguages />
+    <DefaultLanguageXAP>ru</DefaultLanguageXAP>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="color.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="data\db.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="images\logo.png" />
+    <Content Include="js\dx.all.js" />
+    <Content Include="js\dx.all.debug.js" />
+    <Content Include="js\localization\dx.all.de.js" />
+    <Content Include="js\localization\dx.all.ja.js" />
+    <Content Include="js\localization\dx.all.ru.js" />
+    <Content Include="js\globalize.min.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery-2.1.1.min.js" />
+    <Content Include="js\knockout-3.1.0.js" />
+    <Content Include="css\dx.spa.css" />
+    <Content Include="css\dx.common.css" />
+    <Content Include="css\dx.dark.css" />
+    <Content Include="css\dx.light.css" />
+    <Content Include="css\dx.android.holo-dark.css" />
+    <Content Include="css\dx.android.holo-light.css" />
+    <Content Include="css\dx.ios.default.css" />
+    <Content Include="css\dx.ios7.default.css" />
+    <Content Include="css\dx.win8.black.css" />
+    <Content Include="css\dx.win8.white.css" />
+    <Content Include="css\dx.tizen.black.css" />
+    <Content Include="css\dx.tizen.white.css" />
+    <Content Include="linq.js_ver2.2.0.2\jquery.linq-vsdoc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="linq.js_ver2.2.0.2\jquery.linq.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="linq.js_ver2.2.0.2\jquery.linq.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="linq.js_ver2.2.0.2\linq-vsdoc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="linq.js_ver2.2.0.2\linq.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="linq.js_ver2.2.0.2\linq.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="linq.js_ver2.2.0.2\ReadMe.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="linq.js_ver2.2.0.2\reference.htm">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="luschercolordiagnostic.shared.config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="localize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="luscher.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lusher.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\about.html" />
+    <Content Include="views\blank.html" />
+    <Content Include="views\ColorTable2.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ColorTable2.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ColorTable3.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ColorTable3.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\GreyTable1.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\GreyTable1.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ProcessView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ProcessView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ReadyView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\ReadyView.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\WelcomeView.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\WelcomeView.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="data\" />
+    <Folder Include="images\" />
+    <Folder Include="js\" />
+    <Folder Include="js\localization\" />
+    <Folder Include="linq.js_ver2.2.0.2\" />
+    <Folder Include="Resources\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PackageIcons.Android.ic_launcher_36_36.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_48_48.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_72_72.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_96_96.png" />
+    <None Include="Resources\PackageIcons.Android.splash_1280_720.png" />
+    <None Include="Resources\PackageIcons.Android.splash_200_320.png" />
+    <None Include="Resources\PackageIcons.Android.splash_320_200.png" />
+    <None Include="Resources\PackageIcons.Android.splash_320_480.png" />
+    <None Include="Resources\PackageIcons.Android.splash_480_320.png" />
+    <None Include="Resources\PackageIcons.Android.splash_480_800.png" />
+    <None Include="Resources\PackageIcons.Android.splash_720_1280.png" />
+    <None Include="Resources\PackageIcons.Android.splash_800_480.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="ResolveReferences">
+    <Message Text="Copying references to output dir..." Importance="high" />
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+  </Target>
+  <Target Name="CopyFilesToOutputDirectory">
+    <Message Text="Copying files to output dir..." Importance="high" />
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(GeneratedJavascript->'%(Identity)')" DestinationFiles="@(GeneratedJavascript-&gt;'%(Identity)'-&gt;'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Target Name="CoreCompile">
+    <!--<Message Text="'$(MSBuildToolsPath)'"></Message>-->
+    <!--<Message Text="'$(BuildingProject)'"></Message>-->
+    <!--<Message Text="Build JSProject '$(MSBuildProjectFile)':" Importance="high"></Message>-->
+    <!--<Message Text="Finished Build JSProject '$(MSBuildProjectFile)'." Importance="high"></Message>-->
+  </Target>
+  <Target Name="CreateManifestResourceNames" Condition="'@(ResxWithNoCulture)@(ResxWithCulture)@(NonResxWithNoCulture)@(NonResxWithCulture)'!=''" />
+  <Target Name="Clean">
+    <!--
+    <Message Text="Cleaning Output files..." Importance="high" />
+    <Delete Files="@([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+    -->
+    <Message Text="Cleaning Output dir ($([System.IO.Path]::GetFullPath('$(OutputPath)')))..." Importance="high" />
+    <RemoveDir Directories="$([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+  </Target>
+</Project>

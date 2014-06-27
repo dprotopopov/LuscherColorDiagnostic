@@ -1,0 +1,33 @@
+﻿body {
+background: white;
+font-size: 12pt;
+}
+
+.menu {
+display: none;
+}
+
+.blue, .tps {
+display: none;
+}
+
+#foot {
+display: none;
+}
+
+#ads, #ads2, #ads5 {
+display: none;
+}
+ {
+display: none;
+}
+ {
+display: none;
+}
+
+
+#cont 
+{ width:100%;
+position:relative;
+margin: 5px;
+}

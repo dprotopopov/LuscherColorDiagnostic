@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d81e4c7a-0acd-4480-ae6c-66d30a4b03e6</ProjectGuid>
+    <AutoAssignPort>True</AutoAssignPort>
+    <RunInSimulator>True</RunInSimulator>
+    <RootNamespace>LuscherColorDiagnostic</RootNamespace>
+    <ApplicationPage>index.html</ApplicationPage>
+    <Name>LuscherColorDiagnostic.Mobile</Name>
+    <Links>
+      <LinkDescription xmlns="">
+        <Project>63d3cdf4-09ac-4c09-8378-95b89fefa41e</Project>
+        <Path>www</Path>
+      </LinkDescription>
+    </Links>
+    <XapPackagePublisherID>{9532fd87-a780-4fdf-83cc-f9aee3daeae5}</XapPackagePublisherID>
+    <XapPackageProductID>{9e9d5a94-9349-43fb-973a-261f2f96f012}</XapPackageProductID>
+    <KeyApkPath>certificates\android_certificate.p12</KeyApkPath>
+    <KeyApkAlias>tmpl</KeyApkAlias>
+    <ApkDexFilePackageName>app.id_382379b0d34647ab9519d64f4f33998b</ApkDexFilePackageName>
+    <IpaPrivateKeyFile>certificates\ios_private_key.txt</IpaPrivateKeyFile>
+    <VersionCode>1</VersionCode>
+    <TemplateFileApk />
+    <UseCustomTemplateNameApk>False</UseCustomTemplateNameApk>
+    <TemplateFileXap />
+    <UseCustomTemplateNameXap>False</UseCustomTemplateNameXap>
+    <XapSupportedLanguages />
+    <DefaultLanguageXAP>ru</DefaultLanguageXAP>
+    <DebugSitePortNumber>50000</DebugSitePortNumber>
+    <UseWebDev>False</UseWebDev>
+    <DefaultDevice>androidTablet</DefaultDevice>
+    <DeviceOrientation>Portrait</DeviceOrientation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="index.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="main.html" />
+    <Content Include="index.css" />
+    <Content Include="cordova.js" />
+    <Content Include="index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="layouts\Navbar\NavbarLayout.css" />
+    <Content Include="layouts\Navbar\NavbarLayout.html" />
+    <Content Include="layouts\Navbar\NavbarLayout.js" />
+    <Content Include="layouts\Pivot\PivotLayout.css" />
+    <Content Include="layouts\Pivot\PivotLayout.html" />
+    <Content Include="layouts\Pivot\PivotLayout.js" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.css" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.html" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.js" />
+    <Content Include="layouts\Empty\EmptyLayout.css" />
+    <Content Include="layouts\Empty\EmptyLayout.html" />
+    <Content Include="layouts\Empty\EmptyLayout.js" />
+    <Content Include="layouts\Simple\SimpleLayout.css" />
+    <Content Include="layouts\Simple\SimpleLayout.html" />
+    <Content Include="layouts\Simple\SimpleLayout.js" />
+    <Content Include="layouts\Split\SplitLayout.css" />
+    <Content Include="layouts\Split\SplitLayout.html" />
+    <Content Include="layouts\Split\SplitLayout.js" />
+    <Content Include="luschercolordiagnostic.config.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="certificates\" />
+    <Folder Include="css\" />
+    <Folder Include="js\" />
+    <Folder Include="layouts\" />
+    <Folder Include="layouts\Empty\" />
+    <Folder Include="layouts\Navbar\" />
+    <Folder Include="layouts\Pivot\" />
+    <Folder Include="layouts\Simple\" />
+    <Folder Include="layouts\SlideOut\" />
+    <Folder Include="layouts\Split\" />
+    <Folder Include="Resources\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LuscherColorDiagnostic.Shared\LuscherColorDiagnostic.Shared.dxjsproj">
+      <Name>LuscherColorDiagnostic.Shared</Name>
+      <Project>{5b0db5c1-fa8e-49f4-b625-67b5eb9680c2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="certificates\android_certificate.p12" />
+    <None Include="certificates\ios_certificate_request.txt" />
+    <None Include="certificates\ios_private_key.txt" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_36_36.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_48_48.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_72_72.png" />
+    <None Include="Resources\PackageIcons.Android.ic_launcher_96_96.png" />
+    <None Include="Resources\PackageIcons.Android.splash_1280_720.png" />
+    <None Include="Resources\PackageIcons.Android.splash_200_320.png" />
+    <None Include="Resources\PackageIcons.Android.splash_320_200.png" />
+    <None Include="Resources\PackageIcons.Android.splash_320_480.png" />
+    <None Include="Resources\PackageIcons.Android.splash_480_320.png" />
+    <None Include="Resources\PackageIcons.Android.splash_480_800.png" />
+    <None Include="Resources\PackageIcons.Android.splash_720_1280.png" />
+    <None Include="Resources\PackageIcons.Android.splash_800_480.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="ResolveReferences">
+    <Message Text="Copying references to output dir..." Importance="high" />
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+  </Target>
+  <Target Name="CopyFilesToOutputDirectory">
+    <Message Text="Copying files to output dir..." Importance="high" />
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="@(GeneratedJavascript->'%(Identity)')" DestinationFiles="@(GeneratedJavascript-&gt;'%(Identity)'-&gt;'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+  </Target>
+  <Target Name="CoreCompile">
+    <!--<Message Text="'$(MSBuildToolsPath)'"></Message>-->
+    <!--<Message Text="'$(BuildingProject)'"></Message>-->
+    <!--<Message Text="Build JSProject '$(MSBuildProjectFile)':" Importance="high"></Message>-->
+    <!--<Message Text="Finished Build JSProject '$(MSBuildProjectFile)'." Importance="high"></Message>-->
+  </Target>
+  <Target Name="CreateManifestResourceNames" Condition="'@(ResxWithNoCulture)@(ResxWithCulture)@(NonResxWithNoCulture)@(NonResxWithCulture)'!=''" />
+  <Target Name="Clean">
+    <!--
+    <Message Text="Cleaning Output files..." Importance="high" />
+    <Delete Files="@([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+    -->
+    <Message Text="Cleaning Output dir ($([System.IO.Path]::GetFullPath('$(OutputPath)')))..." Importance="high" />
+    <RemoveDir Directories="$([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+  </Target>
+</Project>

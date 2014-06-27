@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/UFoEz2uiuMypUGZL1NKoeg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/F51BEgHuR0tYHxF0bD4vwvesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/yls9EYWOd496wiu7qzfgNg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/ptsans/v6/lILlYDvubYemzYzN7GbLkC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Caption'), local('PTSans-Caption'), url(http://themes.googleusercontent.com/static/fonts/ptsanscaption/v7/OXYTDOzBcXU8MTNBvBHeSW8by34Z3mUMtM-o4y-SHCY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Caption Bold'), local('PTSans-CaptionBold'), url(http://themes.googleusercontent.com/static/fonts/ptsanscaption/v7/Q-gJrFokeE7JydPpxASt25tc0eyfI4QDEsobEEpk_hA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v5/UyYrYy3ltEffJV9QueSi4ZTvAuddT2xDMbdz0mdLyZY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Narrow Bold'), local('PTSans-NarrowBold'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v5/Q_pTky3Sc3ubRibGToTAYsLtdzs3iyjn_YuT226ZsLU.ttf) format('truetype');
+}

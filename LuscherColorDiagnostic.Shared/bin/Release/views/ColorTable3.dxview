@@ -1,0 +1,11 @@
+<div data-options="dxView : { name: 'ColorTable3', title: 'Select color' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div id="actionSheetContainer" data-bind="dxActionSheet: {  dataSource: actionSheetData, visible: actionSheetVisible , showCancelButton: false, title: title, usePopover: true }"></div>
+        <div id="tileViewContainer" data-bind="dxTileView: { height: viewHeight, width: viewWidth, itemClickAction: tileItemClick, baseItemHeight: itemHeight, baseItemWidth: itemWidth, dataSource: tileViewData }">
+            <div data-options="dxTemplate: {  name: 'item' }" data-bind="style: { visibility: visible(), backgroundColor: rgb, borderStyle:'solid', borderWidth:'1px' }"></div>
+        </div>
+        <div id="toastContainer1" data-bind="dxToast:{message: message1, type:'success', displayTime: 3000 }"></div>
+        <div id="toastContainer2" data-bind="dxToast:{message: message2, type:'error', displayTime: 3000 }"></div>
+        <div id="toastContainer3" data-bind="dxToast: { position: { my: 'top center', at: 'top center', of: window, offset: '0 20' }, displayTime: 3000, message: message3 }"></div>
+    </div>
+</div>

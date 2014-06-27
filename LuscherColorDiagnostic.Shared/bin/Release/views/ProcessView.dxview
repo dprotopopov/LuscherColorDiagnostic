@@ -1,0 +1,58 @@
+<div data-options="dxView : { name: 'ProcessView', title: 'ProcessView' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div id="actionSheetContainer" data-bind="dxActionSheet: { visible: actionSheetVisible, dataSource: actionSheetData, title: title, usePopover: true }"></div>
+        <div data-bind="dxPivot: { dataSource: pivotItems, itemClickAction: pivotItemClick }">
+            <div data-options="dxTemplate : { name: 'item' } ">
+                <div data-bind="dxScrollView: { }">
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: table1"></div>
+                        <div data-bind="dxDataGrid: { columns: columnsTable1, dataSource: dataGridSource1 }"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: table2"></div>
+                        <div data-bind="dxDataGrid: { columns: columnsTable2, dataSource: dataGridSource2 }"></div>
+                    </div>
+                    <div class="dx-field">
+                        <div class="dx-field-label" data-bind="text: table3"></div>
+                        <div data-bind="dxDataGrid: { columns: columnsTable3, dataSource: dataGridSource3 }"></div>
+                    </div>
+                </div>
+            </div>
+            <div data-options="dxTemplate : { name: 'result1' } ">
+                <div data-bind="dxList: { dataSource: resultDataSource1 }">
+                    <div data-options="dxTemplate : { name: 'item' } ">
+                        <b data-bind="text: sign"></b>
+                        <b data-bind="text: clr"></b>
+                        <span data-bind="text: txt" style="white-space: pre-wrap; word-wrap: break-word;"></span>
+                    </div>
+                </div>
+            </div>
+            <div data-options="dxTemplate : { name: 'result2' } ">
+                <div data-bind="dxList: { dataSource: resultDataSource2 }">
+                    <div data-options="dxTemplate : { name: 'item' } ">
+                        <b data-bind="text: sign"></b>
+                        <b data-bind="text: clr"></b>
+                        <b data-bind="text: ac"></b>
+                        <b data-bind="text: asterisk"></b>
+                        <span data-bind="text: txt" style="white-space: pre-wrap; word-wrap: break-word;"></span>
+                    </div>
+                </div>
+            </div>
+            <div data-options="dxTemplate : { name: 'result3' } ">
+                <div data-bind="dxList: { dataSource: resultDataSource3 }">
+                    <div data-options="dxTemplate : { name: 'item' } ">
+                        <span data-bind="text: txt" style="white-space: pre-wrap; word-wrap: break-word;"></span>
+                        <b data-bind="text: vlx"></b>
+                    </div>
+                </div>
+            </div>
+            <div data-options="dxTemplate : { name: 'result4' } ">
+                <div data-bind="dxList: { dataSource: resultDataSource4 }">
+                    <div data-options="dxTemplate : { name: 'item' } ">
+                        <span data-bind="text: txt" style="white-space: pre-wrap; word-wrap: break-word;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

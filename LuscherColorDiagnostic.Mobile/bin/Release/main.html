@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>LuscherColorDiagnostic</title>
+        
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/dx.spa.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />	
+    <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" />
+    <link rel="dx-theme" data-theme="generic.dark" href="css/dx.dark.css" />
+    <link rel="dx-theme" data-theme="ios.default" href="css/dx.ios.default.css" />
+    <link rel="dx-theme" data-theme="ios7.default" href="css/dx.ios7.default.css" />
+    <link rel="dx-theme" data-theme="android.holo-dark" href="css/dx.android.holo-dark.css" data-active="true" />
+    <link rel="dx-theme" data-theme="android.holo-light" href="css/dx.android.holo-light.css" data-active="false" />
+    <link rel="dx-theme" data-theme="win8.black" href="css/dx.win8.black.css" data-active="true" />
+    <link rel="dx-theme" data-theme="win8.white" href="css/dx.win8.white.css" data-active="false" />
+    <link rel="dx-theme" data-theme="tizen.black" href="css/dx.tizen.black.css" data-active="true" />
+    <link rel="dx-theme" data-theme="tizen.white" href="css/dx.tizen.white.css" data-active="false" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script type="text/javascript" src="linq.js_ver2.2.0.2/linq.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <!--<![endif]-->
+    <script type="text/javascript" src="linq.js_ver2.2.0.2/jquery.linq.js"></script>
+    <script type="text/javascript" src="js/knockout-3.1.0.js"></script>
+    <script type="text/javascript" src="js/globalize.min.js"></script>
+
+    <script type="text/javascript" src="js/dx.all.js"></script>
+    <!--
+    <script type="text/javascript" src="js/dx.all.debug.js"></script>
+    -->
+   
+    <script type="text/javascript" src="localize.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="luschercolordiagnostic.shared.config.js"></script>
+    <script type="text/javascript" src="luschercolordiagnostic.config.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="data/db.js"></script>
+    <!-- Layouts -->
+    <link rel="stylesheet" type="text/css" href="layouts/Navbar/NavbarLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html"/>    
+    <script type="text/javascript" src="layouts/Navbar/NavbarLayout.js"></script>
+    <link rel="stylesheet" type="text/css" href="layouts/Pivot/PivotLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Pivot/PivotLayout.html"/>    
+    <script type="text/javascript" src="layouts/Pivot/PivotLayout.js"></script>
+    <link rel="stylesheet" type="text/css" href="layouts/Simple/SimpleLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Simple/SimpleLayout.html"/>
+    <script type="text/javascript" src="layouts/Simple/SimpleLayout.js"></script>
+
+    <script type="text/javascript" src="color.js"></script>
+    <script type="text/javascript" src="luscher.js"></script>
+
+    <!-- Views -->
+    <link rel="dx-template" type="text/html" href="views/about.html"/>
+    <link rel="dx-template" type="text/html" href="views/blank.html"/>
+    <link rel="dx-template" type="text/html" href="views/WelcomeView.dxview" />
+    <link rel="dx-template" type="text/html" href="views/GreyTable1.dxview" />
+    <link rel="dx-template" type="text/html" href="views/ColorTable2.dxview" />
+    <link rel="dx-template" type="text/html" href="views/ColorTable3.dxview" />
+    <link rel="dx-template" type="text/html" href="views/ReadyView.dxview" />
+    <link rel="dx-template" type="text/html" href="views/ProcessView.dxview" />
+
+    <script type="text/javascript" src="views/WelcomeView.js"></script>
+    <script type="text/javascript" src="views/GreyTable1.js"></script>
+    <script type="text/javascript" src="views/ColorTable2.js"></script>
+    <script type="text/javascript" src="views/ColorTable3.js"></script>
+    <script type="text/javascript" src="views/ReadyView.js"></script>
+    <script type="text/javascript" src="views/ProcessView.js"></script>
+
+</head>
+<body>
+    <div class="dx-viewport"></div>
+</body>
+</html>
